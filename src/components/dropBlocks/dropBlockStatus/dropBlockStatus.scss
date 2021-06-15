@@ -1,0 +1,26 @@
+.DropBlockStatus {
+  width: 100%;
+  background-color: #ecf3f7;
+  position: absolute;
+  top: 0%;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 100;
+
+  &__active {
+    height: 400px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  &__item:hover {
+    background-color: #e2e7ea;
+    cursor: pointer;
+  }
+  &__item > p {
+    margin-left: 10px;
+  }
+}

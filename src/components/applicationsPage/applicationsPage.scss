@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+.applicationsPage {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  &__main {
+    overflow: hidden;
+    overflow-y: auto;
+    height: calc(100vh - 66px);
+    padding-left: 2px;
+  }
+  &__bnt > button {
+    width: 181px;
+    height: 41px;
+    background-color: #008cf0;
+    outline: none;
+    border: none;
+    color: #ffff;
+    border-radius: 30px;
+    margin-left: 261px;
+    cursor: pointer;
+  }
+  &__listTitle {
+    color: #404147;
+    display: flex;
+    height: 23px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dae0e7;
+    margin-top: 27px;
+  }
+  &__titleId {
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #e2e7ea;
+  }
+  &__titleName {
+    flex-basis: 510px;
+    border-right: 1px solid #e2e7ea;
+  }
+  &__titleName > p {
+    margin-left: 15px;
+  }
+  &__titleStatus {
+    flex-basis: 115px;
+    border-right: 1px solid #e2e7ea;
+  }
+  &__titleStatus > p {
+    margin-left: 15px;
+  }
+  &__titleExecutor > p {
+    margin-left: 15px;
+    flex-grow: 1;
+  }
+  &__listItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    min-height: 53px;
+    border-bottom: 1px solid #dae0e7;
+  }
+  &__listItem:hover {
+    background-color: #e2e7ea;
+    cursor: pointer;
+  }
+  &__bnt {
+    margin-top: 23px;
+  }
+
+  &__itemId {
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 1px;
+    align-self: stretch;
+    align-items: center;
+  }
+
+  &__itemName {
+    flex-basis: 510px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+  }
+  &__itemName > p {
+    margin-left: 15px;
+    word-break: break-all;
+  }
+  &__itemStatus {
+    flex-basis: 115px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+  }
+  &__itemStatus > p {
+    margin-left: 15px;
+    border-radius: 30px;
+    background-color: red;
+    color: #ffff;
+    min-height: 30px;
+    min-width: 97px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  &__itemExecutor {
+    flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+  }
+  &__itemExecutor > p {
+    margin-left: 15px;
+  }
+}
+
+.searchBlock__search {
+  padding-left: 4px;
+  font-size: 18px;
+}

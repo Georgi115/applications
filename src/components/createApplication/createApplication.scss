@@ -1,0 +1,77 @@
+.createApplication {
+  height: calc(100vh - 66px);
+  width: 60%;
+  background-color: #ecf3f7;
+  position: absolute;
+  right: 0;
+  transform: translateX(9999px);
+  opacity: 0;
+  transition: 0.4s;
+  transition-delay: opacity 5s;
+
+  &_active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  &__title {
+    background-color: #1a4876;
+    height: 61px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+  &__inputName {
+    color: #9f9ea7;
+    font-family: Ubuntu-Light, AdobeInvisFont, MyriadPro-Regular;
+    margin-top: 50px;
+  }
+  &__inputDescription {
+    color: #9f9ea7;
+    font-family: Ubuntu-Light, AdobeInvisFont, MyriadPro-Regular;
+    margin-top: 20px;
+  }
+  &__inputName > input {
+    outline: none;
+    border: 1px solid #e8e8e8;
+    font-family: Ubuntu-Light, AdobeInvisFont, MyriadPro-Regular;
+    height: 86px;
+    width: 626px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  &__inputName > .borderError {
+    border: 2px solid rgba(202, 10, 10, 0.726);
+  }
+  &__inputDescription > input {
+    outline: none;
+    border: 1px solid #e8e8e8;
+    font-family: Ubuntu-Light, AdobeInvisFont, MyriadPro-Regular;
+    height: 135px;
+    width: 626px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  &__inputDescription > .borderError {
+    border: 2px solid rgb(212, 5, 5);
+  }
+  &__form {
+    padding-left: 37px;
+  }
+  &__btn > button {
+    width: 181px;
+    height: 41px;
+    color: #fff;
+    background-color: #008cf0;
+    outline: none;
+    border: none;
+    color: #ffff;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  &__btn {
+    margin-top: 20px;
+  }
+}

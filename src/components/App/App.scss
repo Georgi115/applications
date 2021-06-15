@@ -1,0 +1,34 @@
+.searchBlock {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    height: 66px;
+    background-color: #d1e0ed;
+    display: flex;
+    align-items: center;
+  }
+  &__search {
+    width: 698px;
+    height: 41px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #42aaff;
+  }
+  &__fa-search {
+    color: gray;
+    position: absolute;
+    right: 1%;
+  }
+  &__blockInput {
+    width: 698px;
+    position: relative;
+    margin-left: 33px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.App {
+  display: flex;
+}
